@@ -294,3 +294,10 @@ switch (day) {
 }
 
 // LOOPS
+// Types of loops
+// for loop , while loop
+
+// Example 
+ for (i = 30;  i > 28; i-- ) {
+    console.log(i);
+ }
