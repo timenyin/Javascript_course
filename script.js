@@ -301,3 +301,104 @@ switch (day) {
  for (i = 30;  i > 28; i-- ) {
     console.log(i);
  }
+
+//  while Loop
+
+let number  = 0;
+
+while(number <= 3) {
+    console.log(number);
+
+    number++;
+}
+
+// example 2 
+
+// let userInput;
+
+// while (userInput !== "quite") {
+
+//     userInput = prompt("Type 'quite' to text");
+
+// }
+
+
+// Do While Loop
+
+// example 
+let numberX = 5;
+do {
+    console.log(numberX);
+    numberX++;
+    
+}while (5 <  3)
+
+
+// example 2 
+
+// let numberX = 1 
+// do {
+//     console.log(numberX);
+//     numberX++;
+// }while (numberX <= 5)
+
+
+// For ... of  Loop
+
+for (const char of "Harmony") {
+    console.log(char);
+}
+
+// Array example 
+
+const fruitsX = ["apple", "banana", "orange"];
+
+for (const fruitX of  fruits) {
+    console.log(fruitX);
+}
+
+
+
+// For In 
+const person = {name: "Alice", age: 25,  Job_Despription: "Web developer" }
+for (const  Details in person) {
+    console.log(`${Details} : ${person[Details]}`);
+
+}
+
+const UserNewName = "Harmony";
+const UserNewAge = 23;
+
+console.log(`this is my name ${UserNewName} and my age is ${UserNewAge}` );
+console.log(`this is my name, ${UserNewName} "and my age is , ${UserNewAge}`);
+
+
+// Loop Control
+
+// for (let io = 0; io < 10; io++)
+// if(io === 5) { 
+//     break;
+
+// }
+// console.log(io); 
+
+// for (let io = 0; io < 10; io++) {
+//     if (io === 5) {
+//         break; // Exits the loop when io is 5
+//     }
+//     console.log(io); // Prints 0, 1, 2, 3, 4
+// }
+
+// break: Exit the loop immediately.
+for (let io = 0; io <100; io++){
+    if (io === 25) {
+        break
+    }
+    console.log(io);
+}
+
+// continue: Skip to the next iteration.
+for (let  iy = 0;  iy < 10; iy++) {
+    if(iy === 5) continue;
+    console.log(iy);
+}
