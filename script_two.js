@@ -115,3 +115,24 @@ console.log(evens);
 const fruitsM = ["apple", "banana", "grape", "kiwi"];
 const longFruits = fruitsM.filter(fruitM => fruitM.length > 4);
 console.log(longFruits);
+
+
+
+
+const people = [
+    { name: "Alice", age: 25 },
+    { name: "Bob", age: 30 },
+    { name: "Charlie", age: 25 },
+    { name: "marry", age: 19 },
+    { name: "Juliet", age: 20 },
+    { name: "precious", age: 20 }
+  ];
+  
+  const groupedByAge = people.reduce((acc, person) => {
+    const age = person.age;
+    if (!acc[age]) acc[age] = [];
+    acc[age].push(person);
+    return acc;
+  }, {});
+  
+  console.log(groupedByAge);
